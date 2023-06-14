@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDSDKSchemer", "MDSDKSchemer\MDSDKSchemer.csproj", "{C976C526-C603-4345-84BF-B657EFE1F7A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C976C526-C603-4345-84BF-B657EFE1F7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C976C526-C603-4345-84BF-B657EFE1F7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C976C526-C603-4345-84BF-B657EFE1F7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C976C526-C603-4345-84BF-B657EFE1F7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12749083-6168-41A6-BFBC-3CFF6ED15D26}
+	EndGlobalSection
+EndGlobal

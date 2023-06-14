@@ -1,0 +1,104 @@
+// Edit this with the path to the folder on your local machine containing your cloned content repos.
+// This is the folder on your local machine that contains (typically) the windows-dev-docs-pr and winrt-api folders, among others.
+// It's ok for the path to contain spaces. Don't put quotes around it, don't escape slashes.
+
+my_content_repos_folder D:\repos
+
+win32_conceptual_content_repo_name win32-pr
+win32_api_reference_content_repo_name sdk-api
+winrt_conceptual_content_repo_name windows-dev-docs-pr
+winrt_api_reference_content_repo_name winrt-api
+winrt_related_content_repo_name winrt-related
+win32_api_reference_build_repo_name sdk-api-build
+windows_sdk_win32_header_files_folder C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um
+
+// Set live_run to 0 or 1.
+// 0: Means, no, this is not a live run, it's a dry run. So don't create a branch, and don't edit nor save topics.
+// 1: Means, yes, this is a live run. So DO create a branch, and DO edit and save topics.
+
+live_run 0
+content_repo_name win32-pr
+base_branch_name main
+my_alias stwhi
+personal_branch_name refactor-mega-tables-3
+commit_message commit message
+
+// Set throwexceptiononbadxtoctopicurl to 1 or 0.
+// 1: Means throw an exception and terminate the program if an xtoc's topicURL points to a missing file.
+// 0: Means do not throw an exception. Just log the issue, color the containing project's name red, and continue.
+
+// throwexceptiononbadxtoctopicurl 0
+
+// !!!NOTE!!! a project has to be in metro.txt or windev.txt to be processed. Also, a topic has to be represented by an
+// unfiltered TOC entry (that is, no MSDN build condition) to be processed.
+
+// This is the list of projects, or search patterns, that document UWP (Windows 10) features and namespaces.
+
+uwp_proj AppXPkgSchema
+uwp_proj dev_*
+uwp_proj m_ads
+uwp_proj m_ca_platformguides
+uwp_proj m_getstarted
+uwp_proj m_selling
+uwp_proj m_selling_legal
+uwp_proj m_selling_legal_ada
+uwp_proj m_ux_design
+uwp_proj m_ux_design_basics
+uwp_proj w_*
+uwp_proj wp_appmod
+uwp_proj wp_dvc_notif
+uwp_proj wp_dvc_power
+uwp_proj wp_manage_deploy
+uwp_proj wp_media_dvc
+uwp_proj wp_notif_man
+uwp_proj wp_persinfo
+uwp_proj wp_persinfo_prov
+uwp_proj wp_speech_recog
+uwp_proj wp_startscreen
+uwp_proj wp_sys
+uwp_proj wp_sys_power
+uwp_proj wp_sys_profile
+uwp_proj wp_sys_user_game_core
+uwp_proj wp_ui_input
+
+// These types are present in Windows Runtime projects, but they're not Windows Runtime types.
+
+uwp_exclude_type Windows.Phone.PersonalInformation.ConnectTileData
+uwp_exclude_type Windows.Phone.PersonalInformation.ConnectTileImage
+uwp_exclude_type Windows.Phone.PersonalInformation.ContactBinding
+uwp_exclude_type Windows.Phone.PersonalInformation.ContactBindingAttributesConstants
+uwp_exclude_type Windows.Phone.PersonalInformation.ContactBindingManager
+uwp_exclude_type Windows.Phone.PersonalInformation.ContactBindings
+uwp_exclude_type Windows.Phone.Speech.Recognition.InstalledSpeechRecognizers
+uwp_exclude_type Windows.Phone.Speech.Recognition.SemanticProperty
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechAudioProblemOccurredEventArgs
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechGrammar
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechGrammarProbability
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechGrammarSet
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechPredefinedGrammar
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechRecognitionAudioProblem
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechRecognitionConfidence
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechRecognitionResult
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechRecognitionResultDetail
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechRecognitionUIResult
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechRecognizer
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechRecognizerAudioCaptureState
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechRecognizerAudioCaptureStateChangedEventArgs
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechRecognizerInformation
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechRecognizerSettings
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechRecognizerUI
+uwp_exclude_type Windows.Phone.Speech.Recognition.SpeechRecognizerUISettings
+
+// This is the list of projects, or search patterns, that document Windows Runtime (Windows 8.x, Windows Phone 8.x, and Windows 10) features and namespaces.
+
+winrt_proj AppXPkgSchema
+winrt_proj dev_*
+winrt_proj modern_nodes
+winrt_proj m_*
+winrt_proj w_*
+winrt_proj wp_*
+
+// This is the list of project prefixes that contain API reference content. These are prefixes, not search patterns.
+
+ref_proj_prefix w_
+ref_proj_prefix wp_
