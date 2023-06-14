@@ -18,6 +18,8 @@
     <Compile Include="..\..\MDSDK\ExampleCode.cs" Link="MDSDK\ExampleCode.cs" />
     <Compile Include="..\..\MDSDK\GitProcess.cs" Link="MDSDK\GitProcess.cs" />
     <Compile Include="..\..\MDSDK\ProgramBase.cs" Link="MDSDK\ProgramBase.cs" />
+    <Compile Include="..\..\MDSDK\Schemer.cs" Link="MDSDK\Schemer.cs" />
+    <Compile Include="..\..\MDSDK\SchemerEditors.cs" Link="MDSDK\SchemerEditors.cs" />
     <Compile Include="..\..\MDSDK\Table.cs" Link="MDSDK\Table.cs" />
   </ItemGroup>
 

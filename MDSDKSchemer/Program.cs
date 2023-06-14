@@ -23,10 +23,10 @@ namespace MDSDKDerived
     internal class Program : ProgramBase
     {
         // Logs
-        private Log? exampleLog = null;
+        //private Log? exampleLog = null;
 
         // Data
-        private DocSet? win10Docs = null;
+        //private DocSet? win10Docs = null;
         //private Dictionary<string, string> uniqueKeyMap = null;
         //private Dictionary<string, List<string>> nonUniqueKeyMap = null;
 
@@ -38,20 +38,25 @@ namespace MDSDKDerived
         protected override void OnRun()
         {
             // Load a docset.
-            this.win10Docs = DocSet.CreateDocSet(DocSetType.ConceptualAndReference, Platform.UWPWindows10, "Win10 docs");
+            //this.win10Docs = DocSet.CreateDocSet(DocSetType.ConceptualAndReference, Platform.UWPWindows10, "Win10 docs");
 
-            this.exampleLog = new Log()
-            {
-                Label = "Text log containing info too verbose for the console.",
-                Filename = "Example_Log.txt",
-                AnnouncementStyle = ConsoleWriteStyle.Default
-            };
-            this.RegisterLog(this.exampleLog);
-            this.exampleLog.Add("Example message.");
+            //this.exampleLog = new Log()
+            //{
+            //    Label = "Text log containing info too verbose for the console.",
+            //    Filename = "Example_Log.txt",
+            //    AnnouncementStyle = ConsoleWriteStyle.Default
+            //};
+            //this.RegisterLog(this.exampleLog);
+            //this.exampleLog.Add("Example message.");
 
-            //ApiRefModelWin32 apiRefModelWin32 = Win32APIReferenceBuiltTopicsLexer.GetApiRefModelWin32();
+            Schemer.Process(
+                ProgramBase.Win32ConceptualContentRepoName + @"\desktop-src\",
+                @"NativeWiFi",
+                @"lan-profileschema",
+                @"C:\Users\stwhi\Downloads\schemas\LAN_profile_v1.xsd"
+            );
+
             //Win32APIReferenceContentTopicsLexer.DocumentTypesForParameters(apiRefModelWin32);
-
             //Win32APIReferenceContentTopicsLexer.ReportAnyFirstAsteriskInYamlDescription();
 
             // Specifics are in configuration.txt.
