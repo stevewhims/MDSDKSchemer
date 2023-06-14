@@ -12,9 +12,23 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="configuration.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Compile Include="..\..\MDSDK\CommonModels.cs" Link="MDSDK\CommonModels.cs" />
+    <Compile Include="..\..\MDSDK\CommonModelsWin32.cs" Link="MDSDK\CommonModelsWin32.cs" />
+    <Compile Include="..\..\MDSDK\EditorBase.cs" Link="MDSDK\EditorBase.cs" />
+    <Compile Include="..\..\MDSDK\ExampleCode.cs" Link="MDSDK\ExampleCode.cs" />
+    <Compile Include="..\..\MDSDK\GitProcess.cs" Link="MDSDK\GitProcess.cs" />
+    <Compile Include="..\..\MDSDK\ProgramBase.cs" Link="MDSDK\ProgramBase.cs" />
+    <Compile Include="..\..\MDSDK\Table.cs" Link="MDSDK\Table.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\MDSDK\configuration.txt" Link="configuration.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MDSDK\" />
   </ItemGroup>
 
 </Project>
