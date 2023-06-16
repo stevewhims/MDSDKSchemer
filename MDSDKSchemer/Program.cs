@@ -49,12 +49,21 @@ namespace MDSDKDerived
             //this.RegisterLog(this.exampleLog);
             //this.exampleLog.Add("Example message.");
 
-            Schemer.Process(
+            var schemer = new Schemer(
                 ProgramBase.Win32ConceptualContentRepoName + @"\desktop-src\",
                 @"NativeWiFi",
                 @"lan-profileschema",
-                @"C:\Users\stwhi\Downloads\schemas\LAN_profile_v1.xsd"
-            );
+                @"C:\Users\stwhi\Downloads\schemas\LAN_profile_v1.xsd");
+
+            //var schemer = new Schemer(
+            //    ProgramBase.Win32ConceptualContentRepoName + @"\desktop-src\",
+            //    @"NativeWiFi",
+            //    @"lan-policychema",
+            //    @"C:\Users\stwhi\Downloads\schemas\LAN_policy_v1.xsd");
+
+            schemer.Survey(); // Read the xsd, and build tree of Editors.
+            schemer.Generate(); // Generate content.
+            schemer.Commit(); // Clean up.
 
             //Win32APIReferenceContentTopicsLexer.DocumentTypesForParameters(apiRefModelWin32);
             //Win32APIReferenceContentTopicsLexer.ReportAnyFirstAsteriskInYamlDescription();
