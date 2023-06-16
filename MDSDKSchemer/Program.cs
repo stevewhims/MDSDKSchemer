@@ -61,7 +61,16 @@ namespace MDSDKDerived
             //    @"lan-policychema",
             //    @"C:\Users\stwhi\Downloads\schemas\LAN_policy_v1.xsd");
 
+            //var schemer = new Schemer(
+            //    ProgramBase.Win32ConceptualContentRepoName + @"\desktop-src\",
+            //    @"NativeWiFi",
+            //    @"wlan-profileschema",
+            //    @"C:\Users\stwhi\Downloads\schemas\WLAN_profile_v1.xsd");
+
+            ProgramBase.IndentationChar = '.';
+            schemer.DebugInit(); // This is just a convenience so you don't have to manually delete the output folder each run. Delete this call for production.
             schemer.Survey(); // Read the xsd, and build tree of Editors.
+            //EditorBase.IndentationChar = '.';
             schemer.Generate(); // Generate content.
             schemer.Commit(); // Clean up.
 
