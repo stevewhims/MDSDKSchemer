@@ -64,6 +64,12 @@ namespace MDSDKDerived
             //var schemer = new Schemer(
             //    ProgramBase.Win32ConceptualContentRepoName + @"\desktop-src\",
             //    @"NativeWiFi",
+            //    @"onexschema",
+            //    @"C:\Users\stwhi\Downloads\schemas\OneX_v1.xsd");
+
+            //var schemer = new Schemer(
+            //    ProgramBase.Win32ConceptualContentRepoName + @"\desktop-src\",
+            //    @"NativeWiFi",
             //    @"wlan-profileschema",
             //    @"C:\Users\stwhi\Downloads\schemas\WLAN_profile_v1.xsd");
 

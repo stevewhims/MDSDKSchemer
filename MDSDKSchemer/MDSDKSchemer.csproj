@@ -15,6 +15,7 @@
     <Compile Include="..\..\MDSDK\CommonModels.cs" Link="MDSDK\CommonModels.cs" />
     <Compile Include="..\..\MDSDK\CommonModelsWin32.cs" Link="MDSDK\CommonModelsWin32.cs" />
     <Compile Include="..\..\MDSDK\EditorBase.cs" Link="MDSDK\EditorBase.cs" />
+    <Compile Include="..\..\MDSDK\EditorObjectModel.cs" Link="MDSDK\EditorObjectModel.cs" />
     <Compile Include="..\..\MDSDK\ExampleCode.cs" Link="MDSDK\ExampleCode.cs" />
     <Compile Include="..\..\MDSDK\GitProcess.cs" Link="MDSDK\GitProcess.cs" />
     <Compile Include="..\..\MDSDK\ProgramBase.cs" Link="MDSDK\ProgramBase.cs" />
