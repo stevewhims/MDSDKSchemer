@@ -1,6 +1,22 @@
 // An `# AppendixElement` section represents an element that didn't appear in the xsd that we parsed, but that we want to document as if it did.
+// The places we document it are a) the all-elements landing page, and b) the relevant Child elements table.
 
 # AppendixElement
-## AppendixElement.Name OneX
+## AppendixElement.Element OneX
 ## AppendixElement.Url /windows/win32/nativewifi/onexschema-onex-element
+## AppendixElement.Type
+## AppendixElement.Description Optional IEEE802.1X configuration.
 ## AppendixElement.ComesAfter OneXEnabled (security)
+
+# SyntaxComment
+## SyntaxComment.Lines Extension point for other namespaces, including the OneX
+## SyntaxComment.Lines namespace currently used for optional IEEE802.1X configuration.
+## SyntaxComment.Lines The OneX configuration parameters must be present if the 
+## SyntaxComment.Lines <OneXEnforced> flag is set to "true" or the <OneXEnabled> flag
+## SyntaxComment.Lines is set to "true". See the Child elements section below.
+## SyntaxComment.ComesAfter OneXEnabled (security)
+
+// Author one set of H1 and H2 for each uniqueification.
+
+# Uniqueification
+## Uniqueification.Element security (MSM)
