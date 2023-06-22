@@ -49,31 +49,30 @@ namespace MDSDKDerived
             //this.RegisterLog(this.exampleLog);
             //this.exampleLog.Add("Example message.");
 
-            var schemer = new Schemer(
-                ProgramBase.Win32ConceptualContentRepoName + @"\desktop-src\",
-                @"NativeWiFi",
-                @"lan-profileschema",
-                @"C:\Users\stwhi\Downloads\schemas\LAN_profile_v1.xsd");
+            string topicsRootPath = ProgramBase.Win32ConceptualContentRepoName + @"\desktop-src\";
+            string topicsFolderName = @"NativeWiFi";
 
-            //var schemer = new Schemer(
-            //    ProgramBase.Win32ConceptualContentRepoName + @"\desktop-src\",
-            //    @"NativeWiFi",
+            string schemaDisplayName = @"LAN_profile";
+            string schemaNameForFilenames = @"lan-profileschema";
+            string xsdFileName = @"C:\Users\stwhi\Downloads\schemas\LAN_profile_v1.xsd";
+
             //    @"lan-policychema",
             //    @"C:\Users\stwhi\Downloads\schemas\LAN_policy_v1.xsd");
 
-            //var schemer = new Schemer(
-            //    ProgramBase.Win32ConceptualContentRepoName + @"\desktop-src\",
-            //    @"NativeWiFi",
             //    @"onexschema",
             //    @"C:\Users\stwhi\Downloads\schemas\OneX_v1.xsd");
 
-            //var schemer = new Schemer(
-            //    ProgramBase.Win32ConceptualContentRepoName + @"\desktop-src\",
-            //    @"NativeWiFi",
             //    @"wlan-profileschema",
             //    @"C:\Users\stwhi\Downloads\schemas\WLAN_profile_v1.xsd");
 
-            ProgramBase.IndentationChar = '.';
+            var schemer = new Schemer(
+                topicsRootPath,
+                topicsFolderName,
+                schemaDisplayName,
+                schemaNameForFilenames,
+                xsdFileName);
+
+            ProgramBase.IndentationCharForConsole = '.';
             schemer.DebugInit(); // This is just a convenience so you don't have to manually delete the output folder each run. Delete this call for production.
             schemer.Survey(); // Read the xsd, and build tree of Editors.
             //EditorBase.IndentationChar = '.';

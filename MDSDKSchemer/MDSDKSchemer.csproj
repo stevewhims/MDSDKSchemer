@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="configuration.txt" />
+    <None Remove="LAN_profile-configuration.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,13 +21,17 @@
     <Compile Include="..\..\MDSDK\GitProcess.cs" Link="MDSDK\GitProcess.cs" />
     <Compile Include="..\..\MDSDK\ProgramBase.cs" Link="MDSDK\ProgramBase.cs" />
     <Compile Include="..\..\MDSDK\Schemer.cs" Link="MDSDK\Schemer.cs" />
+    <Compile Include="..\..\MDSDK\SchemerCustomConfiguration.cs" Link="MDSDK\SchemerCustomConfiguration.cs" />
     <Compile Include="..\..\MDSDK\SchemerEditors.cs" Link="MDSDK\SchemerEditors.cs" />
     <Compile Include="..\..\MDSDK\Table.cs" Link="MDSDK\Table.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="..\..\MDSDK\configuration.txt" Link="configuration.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LAN_profile-configuration.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 

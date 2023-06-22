@@ -1,0 +1,6 @@
+// An `# AppendixElement` section represents an element that didn't appear in the xsd that we parsed, but that we want to document as if it did.
+
+# AppendixElement
+## AppendixElement.Name OneX
+## AppendixElement.Url /windows/win32/nativewifi/onexschema-onex-element
+## AppendixElement.ComesAfter OneXEnabled (security)
