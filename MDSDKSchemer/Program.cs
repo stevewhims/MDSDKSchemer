@@ -52,25 +52,38 @@ namespace MDSDKDerived
             string topicsRootPath = ProgramBase.Win32ConceptualContentRepoName + @"\desktop-src\";
             string topicsFolderName = @"NativeWiFi";
 
-            string schemaDisplayName = @"LAN_profile";
-            string schemaNameForFilenames = @"lan-profileschema";
-            string xsdFileName = @"C:\Users\stwhi\Downloads\schemas\LAN_profile_v1.xsd";
+            var xsdFilenames = new List<string>();
 
-            //    @"lan-policychema",
-            //    @"C:\Users\stwhi\Downloads\schemas\LAN_policy_v1.xsd");
+            //string schemaDisplayName = @"LAN_policy";
+            //string schemaNameForFilenames = @"lan-policyschema";
+            //xsdFilenames.Add(@"C:\Users\stwhi\Downloads\schemas\LAN_policy_v1.xsd");
 
-            //    @"onexschema",
-            //    @"C:\Users\stwhi\Downloads\schemas\OneX_v1.xsd");
+            //string schemaDisplayName = @"LAN_profile";
+            //string schemaNameForFilenames = @"lan-profileschema";
+            //string xsdFileName = @"C:\Users\stwhi\Downloads\schemas\LAN_profile_v1.xsd";
 
-            //    @"wlan-profileschema",
-            //    @"C:\Users\stwhi\Downloads\schemas\WLAN_profile_v1.xsd");
+            //string schemaDisplayName = @"OneX";
+            //string schemaNameForFilenames = @"onexschema";
+            //string xsdFileName = @"C:\Users\stwhi\Downloads\schemas\OneX_v1.xsd";
+
+            //string schemaDisplayName = @"WLAN_policy";
+            //string schemaNameForFilenames = @"wlan-policyschema";
+            //string xsdFileName = @"C:\Users\stwhi\Downloads\schemas\WLAN_policy_v1.xsd";
+
+            string schemaDisplayName = @"WLAN_profile";
+            string schemaNameForFilenames = @"wlan-profileschema";
+            xsdFilenames.Add(@"C:\Users\stwhi\Downloads\schemas\WLAN_profile_v1.xsd");
+            //xsdFilenames.Add(@"C:\Users\stwhi\Downloads\schemas\WLAN_profile_v2.xsd");
+            //xsdFilenames.Add(@"C:\Users\stwhi\Downloads\schemas\WLAN_profile_v3.xsd");
+            //xsdFilenames.Add(@"C:\Users\stwhi\Downloads\schemas\WLAN_profile_v4.xsd");
+            //xsdFilenames.Add(@"C:\Users\stwhi\Downloads\schemas\WLAN_profile_v5.xsd");
 
             var schemer = new Schemer(
                 topicsRootPath,
                 topicsFolderName,
                 schemaDisplayName,
                 schemaNameForFilenames,
-                xsdFileName);
+                xsdFilenames);
 
             ProgramBase.IndentationCharForConsole = '.';
             schemer.DebugInit(); // This is just a convenience so you don't have to manually delete the output folder each run. Delete this call for production.

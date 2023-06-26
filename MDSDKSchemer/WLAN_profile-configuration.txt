@@ -1,0 +1,36 @@
+// An `# AppendixElement` section represents an element that didn't appear in the xsd that we parsed, but that we want to document as if it did.
+// The places we document it are a) the all-elements landing page, and b) the relevant Child elements table.
+
+# AppendixElement
+## AppendixElement.Element OneX
+## AppendixElement.Url /windows/win32/nativewifi/onexschema-onex-element
+## AppendixElement.Type
+## AppendixElement.Description Optional IEEE802.1X configuration.
+## AppendixElement.ComesAfter preAuthThrottle (security)
+
+# SyntaxComment
+## SyntaxComment.Lines Flag for specifying Mac Address Randomization on this profile; default set by policy.
+## SyntaxComment.ComesBefore enableRandomization (MacRandomization)
+
+# SyntaxComment
+## SyntaxComment.Lines Flag for specifying whether a new MAC shall be picked every day.
+## SyntaxComment.ComesBefore randomizeEveryday (MacRandomization)
+
+# SyntaxComment
+## SyntaxComment.Lines Randomization seed is a DWORD value that differentiates various versions of the same profile.
+## SyntaxComment.ComesBefore randomizationSeed (MacRandomization)
+
+# SyntaxComment
+## SyntaxComment.Lines Extension point for other namespaces, including the OneX
+## SyntaxComment.Lines namespace currently used for optional IEEE802.1X configuration.
+## SyntaxComment.ComesAfter preAuthThrottle (security)
+
+# SyntaxComment
+## SyntaxComment.Lines Either Hex or named SSID must be present.
+## SyntaxComment.Lines Hex SSID takes precedence over named SSID.
+## SyntaxComment.ComesBefore hex (SSIDPrefix)
+
+// Author one set of H1 and H2 for each uniqueification.
+
+# Uniqueification
+## Uniqueification.Element security (MSM)

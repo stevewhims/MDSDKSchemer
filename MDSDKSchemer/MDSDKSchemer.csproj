@@ -10,6 +10,7 @@
   <ItemGroup>
     <None Remove="configuration.txt" />
     <None Remove="LAN_profile-configuration.txt" />
+    <None Remove="WLAN_profile-configuration.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +32,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="LAN_profile-configuration.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WLAN_profile-configuration.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
